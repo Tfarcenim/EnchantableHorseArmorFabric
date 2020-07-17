@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "enchantablehorsearmor",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Enchantable Horse Armor",
+  "description": "Enchantable Horse Armor",
   "authors": [
     "Me!"
   ],
@@ -19,11 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "enchantablehorsearmor.mixins.json"
   ],
 
   "depends": {
