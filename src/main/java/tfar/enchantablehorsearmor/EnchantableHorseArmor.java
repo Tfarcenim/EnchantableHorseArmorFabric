@@ -38,9 +38,6 @@ public class EnchantableHorseArmor {
 		return old;
 	}
 
-	public static final Set<EnchantmentTarget> acceptable = Arrays.stream(EnchantmentTarget.values())
-					.filter(enchantmentTarget -> enchantmentTarget.ordinal() < 5).collect(Collectors.toSet());
-
 	public static void checkHorseHook(Enchantment enchantment, LivingEntity livingEntity, CallbackInfoReturnable<Integer> cir) {
 		if (livingEntity instanceof HorseEntity) {
 			ItemStack armor = ((HorseEntity) livingEntity).getArmorType();
@@ -49,9 +46,5 @@ public class EnchantableHorseArmor {
 				cir.setReturnValue(level);
 			}
 		}
-	}
-
-	public static boolean isAcceptable(Item itemIn,EnchantmentTarget target) {
-		return itemIn instanceof HorseArmorItem;
 	}
 }
