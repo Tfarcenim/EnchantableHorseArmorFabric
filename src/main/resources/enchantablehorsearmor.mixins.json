@@ -2,7 +2,6 @@
   "required": true,
   "package": "tfar.enchantablehorsearmor.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "enchantablehorsearmor.refmap.json",
   "mixins": [
     "EnchantmentHelperMixin",
     "EnchantmentTargetMixin",
