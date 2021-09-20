@@ -30,7 +30,7 @@ public class EnchantableHorseArmor {
 		boolean glint = stack.hasGlint();
 		if (glint) {
 			Identifier texture = horseArmorItem.getEntityTexture();
-			return VertexConsumers.dual(
+			return VertexConsumers.union(
 							bufferIn.getBuffer(RenderLayer.getEntityGlint()),
 							bufferIn.getBuffer(RenderLayer.getEntityCutoutNoCull(texture))
 			);
